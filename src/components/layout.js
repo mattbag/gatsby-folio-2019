@@ -6,7 +6,8 @@ import styled from '@emotion/styled'
 import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
-import './layout.css'
+import './../styles/codrops.css'
+// import './../styles/layout.css'
 
 const Content = styled.div`
   ${tw`px-32 py-8 font-sans`};

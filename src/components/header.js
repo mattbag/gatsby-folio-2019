@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-// import styled from 'react-emotion'
+import Nav from './nav'
 import styled from '@emotion/styled'
 
 const Container = styled.div`
@@ -18,6 +18,7 @@ const Header = ({ siteTitle }) => (
     <StyledLink to="/">
       <Title>{siteTitle}</Title>
     </StyledLink>
+    <Nav/>
   </Container>
 )
 
