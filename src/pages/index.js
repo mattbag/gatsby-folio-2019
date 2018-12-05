@@ -23,14 +23,14 @@ class IndexPage extends Component {
 	render() {
 		return (
 			<Layout>
-				<div className="page page--preview">
+				<div className="page page--preview js">
 					<div className="gridwrap">
 						<Grid classType={1} />
 						<Grid classType={2} />
 						<Grid classType={3} />
 						<Grid classType={4} />
 						<Grid classType={5} />
-						<button class="gridback" style={{ opacity: 0 }}>
+						<button className="gridback" style={{ opacity: 0, zIndex:2 }}>
 							<svg className="icon icon--arrow" viewBox="0 0 24 24">
 								
 									<title>Back arrow</title>

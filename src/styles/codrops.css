@@ -9,10 +9,10 @@ body {
 	--color-text: #fff;
 	--color-bg: #101010;
 	--color-link: #fff;
-	--color-link-hover: #0b44fb;
-	font-family: "Niramit", Arial, sans-serif;
+	--color-link-hover: #305df0;
+	font-family: monospace, sans-serif;
 	min-height: 100vh;
-	color: #57585c;
+	color: #363e5f;
 	color: var(--color-text);
 	background-color: #fff;
 	background-color: var(--color-bg);
@@ -186,7 +186,9 @@ main {
 }
 
 .menu__item-text {
-	font-family: "Anton", Arial, sans-serif;
+	font-family: Arial, sans-serif;
+	font-weight: bolder;
+	letter-spacing: -8px;
 	text-transform: uppercase;
 	-webkit-text-stroke: 2px #fff;
 	text-stroke: 2px #fff;
@@ -195,7 +197,7 @@ main {
 	color: transparent;
 	font-size: 2rem;
 	padding: 0 1rem;
-	cursor: pointer;
+	cursor: crosshair;
 	display: inline-block;
 }
 
@@ -209,7 +211,11 @@ main {
 
 .menu__item-link {
 	pointer-events: none;
-	font-weight: bold;
+	/* font-weight: bold; */
+	position: absolute;
+	bottom:-.6rem;
+	/* right:.2rem; */
+	left: 80%;
 	align-self: flex-end;
 	opacity: 0;
 	width: 100%;
@@ -225,8 +231,8 @@ main {
 	display: grid;
 	max-width: 1300px;
 	margin: 0 auto;
-	grid-template-columns: 100%;
-	grid-template-rows: 1.75rem calc(100% - 1.75rem);
+	grid-template-columns: 1fr;
+	grid-template-rows: 5rem calc(100% - 1.75rem);
 	position: relative;
 	padding: 12rem 5vw 2rem;
 	pointer-events: none;

@@ -4,10 +4,11 @@ import Nav from './nav'
 import styled from '@emotion/styled'
 
 const Container = styled.div`
-  ${tw`px-32 py-8`};
+  ${tw`px-32 py-8 fixed w-screen pin-b`};
+  z-index:1;
 `
 const Topbar = styled.div`
-  ${tw`px-32 py-2 text-white`};
+  ${tw`px-32 max-w-lg mx-auto py-2 text-white`};
   ul{
     display:flex;
     margin:0;
@@ -35,9 +36,9 @@ const Header = ({ siteTitle }) => (
     <Topbar>
       <ul>
         <li><a href="" target="_blank" rel="noreferrer nofollow">Github</a></li> 
-
         <li><a href="" target="_blank" rel="noreferrer nofollow">Twitter</a></li>
-
+        <li><a href="" target="_blank" rel="noreferrer nofollow">LinkedIn</a></li>
+        <li><a href="" target="_blank" rel="noreferrer nofollow">Email</a></li>
       </ul>
     </Topbar>
     <Nav />

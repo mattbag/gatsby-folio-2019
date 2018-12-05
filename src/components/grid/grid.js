@@ -1,6 +1,10 @@
 import React, {Component} from 'react'
 import Cell from './cell'
-import BG from "../../images/drops/1.jpg"
+import BG1 from "../../images/drops/1.jpg"
+import BG2 from "../../images/drops/2.jpg"
+import BG3 from "../../images/drops/3.jpg"
+import BG4 from "../../images/drops/4.jpg"
+import BG5 from "../../images/drops/5.jpg"
 
 import ImagesLoaded from 'react-images-loaded';
 
@@ -15,12 +19,12 @@ export default class Grid extends Component {
         // console.log('====');
         // console.log('handleDone', this.props.classType);
         // console.log('====');
+        this.setState({imagesLoaded: true})
     }
     handleOnFail =  () => {
-        // console.log('====');
-        // console.log('handleOnFail',this.props.classType);
-        // console.log('====');
-        this.setState({imagesLoaded: true})
+        console.log('====');
+        console.log('handleOnFail',this.props.classType);
+        console.log('====');
     }
     render() {
         return (
@@ -33,11 +37,16 @@ export default class Grid extends Component {
                 done={this.handleDone}
                 background=".cell" // true or child selector
             >
-                <Cell bg={BG} />
-                <Cell bg={BG} />
-                <Cell bg={BG} />
-                <Cell bg={BG} />
-                <Cell bg={BG} />
+                <Cell bg={BG1} />
+                <Cell bg={BG2} />
+                <Cell bg={BG3} />
+                <Cell bg={BG4} />
+                <Cell bg={BG5} />
+                <Cell bg={BG1} />
+                <Cell bg={BG2} />
+                <Cell bg={BG3} />
+                <Cell bg={BG4} />
+                <Cell bg={BG5} />
             </ImagesLoaded>
         )
     }

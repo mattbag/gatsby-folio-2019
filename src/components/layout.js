@@ -10,7 +10,7 @@ import './../styles/codrops.css'
 // import './../styles/layout.css'
 
 const Content = styled.div`
-  ${tw`px-32 py-8 font-sans`};
+  ${tw`px-32`};
 `
 
 const Layout = ({ children }) => (
