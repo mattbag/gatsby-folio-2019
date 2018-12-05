@@ -14,11 +14,14 @@
     "gatsby-plugin-offline": "^2.0.18",
     "gatsby-plugin-react-helmet": "^3.0.4",
     "gatsby-plugin-tailwindcss": "^1.0.3",
+    "gsap": "^2.0.2",
+    "imagesloaded": "^4.1.4",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-emotion": "^10.0.0",
     "react-helmet": "^5.2.0",
+    "react-images-loaded": "^2.0.0",
     "tailwindcss": "^0.7.2"
   },
   "keywords": [

@@ -4,7 +4,20 @@ import Nav from './nav'
 import styled from '@emotion/styled'
 
 const Container = styled.div`
-  ${tw`bg-grey-lightest px-32 py-8`};
+  ${tw`px-32 py-8`};
+`
+const Topbar = styled.div`
+  ${tw`px-32 py-2 text-white`};
+  ul{
+    display:flex;
+    margin:0;
+    padding:0;
+    justify-content:space-around;
+    list-style:none;
+    li{
+      margin:0 3px;
+    }
+  }
 `
 const Title = styled.h1`
   ${tw`text-grey-darkest m-0`};
@@ -15,10 +28,19 @@ const StyledLink = styled(Link)`
 
 const Header = ({ siteTitle }) => (
   <Container>
-    <StyledLink to="/">
+    {/* <StyledLink to="/">
       <Title>{siteTitle}</Title>
-    </StyledLink>
-    <Nav/>
+    </StyledLink> */}
+
+    <Topbar>
+      <ul>
+        <li><a href="" target="_blank" rel="noreferrer nofollow">Github</a></li> 
+
+        <li><a href="" target="_blank" rel="noreferrer nofollow">Twitter</a></li>
+
+      </ul>
+    </Topbar>
+    <Nav />
   </Container>
 )
 
