@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import styled from 'react-emotion'
+// import styled from 'react-emotion'
+import styled from '@emotion/styled'
 
 const Container = styled.div`
   ${tw`bg-grey-lightest px-32 py-8`};

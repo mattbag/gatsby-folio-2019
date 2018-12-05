@@ -1,7 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import styled from 'react-emotion'
+// import styled from 'react-emotion'
+import styled from '@emotion/styled'
 import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
@@ -23,7 +24,7 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <>
+      <div>
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
@@ -35,7 +36,7 @@ const Layout = ({ children }) => (
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
         <Content>{children}</Content>
-      </>
+      </div>
     )}
   />
 )

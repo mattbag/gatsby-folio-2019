@@ -1,4 +1,6 @@
 # Gatsby Tailwind Emotion Starter
+Replicating this scenario:
+https://tympanus.net/Development/AnimatedGridPreviews/
 
 ## Getting Started
 
