@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Tailwind Emotion Starter',
+    title: 'Matt__Bagni--2019',
   },
   plugins: [
     'gatsby-plugin-tailwindcss',
@@ -12,8 +12,8 @@ module.exports = {
         name: 'gatsby-tailwind-emotion-starter',
         short_name: 'starter',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#01031d',
+        theme_color: '#01031d',
         display: 'minimal-ui',
         icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
       },

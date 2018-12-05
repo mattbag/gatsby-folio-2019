@@ -4,22 +4,22 @@ import BG1 from "../../images/drops/1.jpg"
 import BG2 from "../../images/drops/2.jpg"
 import BG3 from "../../images/drops/3.jpg"
 import BG4 from "../../images/drops/7.jpg"
-import BG5 from "../../images/drops/6.jpg"
+import BG5 from "../../images/drops/9.jpg"
 
 import ImagesLoaded from 'react-images-loaded';
 
 export default class Grid extends Component {
     constructor(){
         super()
-        this.state = {
-            imagesLoaded : false
-        }
+        // this.state = {
+        //     imagesLoaded : false
+        // }
     }
     handleDone = () => {
         // console.log('====');
         // console.log('handleDone', this.props.classType);
         // console.log('====');
-        this.setState({imagesLoaded: true})
+        // this.setState({imagesLoaded: true})
     }
     handleOnFail =  () => {
         console.log('====');
