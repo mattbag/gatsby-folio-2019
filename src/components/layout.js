@@ -10,7 +10,7 @@ import './../styles/codrops.css'
 // import './../styles/layout.css'
 
 const Content = styled.div`
-  ${tw`px-32`};
+  ${tw`px-2 md:px-32`};
 `
 
 const Layout = ({ children }) => (
